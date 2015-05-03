@@ -1,0 +1,15 @@
+
+For store purchase problem, I have used tab as delimiter.
+1)select item,sum(cost) from store_purchase group by item order by item;
+2)select storename,max(cost) from store_purchase group by storename order by storename;
+3)select count(*),sum(cost) from store_purchase;
+##For access_log problem, I have used space as delimiter
+4)select col_6,count(*) from access_log where col_6='/assets/js/the-associates.js' group by col_6;
+5)select col_0,count(*) from access_log where col_0='10.99.99.186' group by col_0;
+6)select col_0,count(*) as cnt from access_log2 group by col_0 order by cnt desc limit 1;
+(Run the querry 6 not on the original access_log file but after cleaning the access_log file with mapper6.py code.
+Mapper6.py removes all discrepencies in the path as described in the problem set)
+
+All the problems are solved using BeesWax(Hive UI) in HUE.It runs Mapreduce algorithm on HQL which is way too fast.
+Cloudera \m/
+Cheers

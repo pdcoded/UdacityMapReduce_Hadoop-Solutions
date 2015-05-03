@@ -1,0 +1,2 @@
+Mapper/Reducer (1-3) correspond to purchase data problem.
+Mapper/Reducer(4-6) correspond to access_log data problem.
